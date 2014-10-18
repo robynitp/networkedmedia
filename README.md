@@ -1,6 +1,5 @@
-networkedmedia
+ITP Comm Lab: Networked Media
 ==============
 
-ITP Comm Lab: Networked Media course
 
-See the [wiki](https://github.com/robynitp/networkedmedia/wiki) for important info!
+See the [wiki for this repo](https://github.com/robynitp/networkedmedia/wiki) for important info!
