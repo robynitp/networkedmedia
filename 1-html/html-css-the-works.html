@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>The Title Shows Up in the Browser Window or Tab</title>
+	<style type="text/css">
+	/* This is CSS. 
+	   CSS comments look different from HTML comments */
+	
+	/* tag level: styles all h1 tags */
+	h1{
+		background-color: #ccc;
+	}
+
+	/* links */
+	a{
+		color: #31B0E5;
+	}
+	/* link tags can have states: link, visited, hover, active */
+	a:visited{
+		color: #76AE85;
+		padding: 2px;
+		margin: 8px;
+	}
+	a:hover{
+		background-color: #ccc;
+		
+	}
+	
+	/* lists */
+	li{
+		background-color: #333;
+		border: 1px solid black;
+		padding: 20px;
+		margin: 8px;
+		list-style-type:none; /* remove the bullets */
+	}
+	/* only the <a> tags that are inside <li> tags */
+	li a{
+		color: rgb(57,170,210);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2em;
+	}
+	
+	/* sections */
+	
+	/* class uses the dot */
+	.story{
+		border: 1px solid #333;
+		background-color: #ff9933;
+		margin: 10px;
+		padding: 1em;
+		width: 300px;
+		float:left; /* float positions the elements next to each other instead of down the page */
+		font-family: Arial;
+	}
+	
+	/* id uses the hash sign */
+	#mainheader{
+		border-bottom: 5px solid rgb(15,98,139); /* you can also use RGB colors */
+	}
+	
+
+	</style>
+
+</head>
+
+<body>
+	<!-- 
+	Use the id attribute only if there will be only one element of this type.
+	There is only one "mainheader" div
+	-->
+	<div id="mainheader">
+		<!--
+		The h1 tag, the largest header, should contain the overall subject of the page.
+		Google wants to know!
+		-->
+		<h1>Main Idea</h1>
+		<!-- the nav tag is new in HTML5 -->
+		<nav id="mainnav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">Breaking News</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</div><!-- end main header -->
+	
+	<!-- LINKS: relative vs. absolute -->
+	<!-- This is an absolute link. The full URL will go to BuzzFeed no matter where this HTML page lives -->
+	<p>Some information here. <a href="http://buzzfeed.com" >14 Things That Are Meaningless</a></p>
+	
+	<!-- This is also an absolute link. The beginning slash means the top level of your domain.
+	     No matter what domain the page is in, the link goes to whatever-domain-this-is.com/hello-world -->
+	<p>Say Hello, World. <a href="/hello-world.html">Hello world.</a></p>
+	
+	<!-- This is a relative link. It will work only if test.html is in the same directory as this file -->
+	<p>Here is that <a href="test.html">test page</a> I made</p>
+	
+	<!-- This is also relative. But it navigates up one directory level with '../' -->
+	<p>Back to <a href="../readme.html">home</a>
+		
+	<p>Some <strong>really information</strong> here. 
+		More stuff 
+		extra stuff<br/><!-- lines don't break unless you use the break tag -->
+		and even more!</p>
+		<img src="img/cat_with_calculator.jpg" width="600" height="450" alt="Cat With Calculator"/>
+		</p>
+		
+
+	<!-- yanked from the NY Times home page -->
+	<div class="story topstory"> <!-- more than one class is allowed, space-separated -->
+		<h3><a href="http://www.nytimes.com/2013/10/23/us/politics/sebelius-thrust-into-firestorm-on-exchanges.html?hp">
+			Sebelius Faces a Firestorm OverHealth Exchanges</a>
+		</h3>
+		<h6 class="byline"> By Sheryl Gay Stolberg</h6>
+		<p class="summary">Kathleen Sebelius, President Obama’s health secretary and the public face of his signature health care law, is weathering criticism over its problem-plagued online insurance exchange and has proved an easy target for Republicans.</p>
+	</div> <!-- end story div -->
+
+	<div class="story">
+		<h3><a href="/html-intro">An Intro to HMTL</a></h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non rutrum lacus. In tincidunt mollis leo sed molestie. Etiam vitae enim molestie, vulputate ipsum vel, imperdiet sapien.</p>
+	</div> <!-- end story div -->
+	
+	</body>
+	</html>
