@@ -1,5 +1,5 @@
 // serve files from a directory named "public"
-serveFiles('public');
+serveFiles("public");
 
 /*
  
