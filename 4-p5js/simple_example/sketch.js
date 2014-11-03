@@ -1,3 +1,4 @@
+// Runs once at the start
 function setup() {
 
 	console.log('setup.');
@@ -5,6 +6,7 @@ function setup() {
 
 }
 
+// Runs in a loop, over and over again
 function draw() {
 
 	console.log('draw!');
