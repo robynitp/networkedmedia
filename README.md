@@ -1,7 +1,7 @@
 ITP Comm Lab: Networked Media
 ==============
 
-###See the [__Wiki__ for this repo](https://github.com/robynitp/networkedmedia/wiki) for syllabus, assignments, etc.
+###See the [__Wiki__](https://github.com/robynitp/networkedmedia/wiki) for syllabus, assignments, etc.
 
 * [Syllabus](https://github.com/robynitp/networkedmedia/wiki)
 
