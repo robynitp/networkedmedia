@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Create DOM elements dynamically</title>
+		
+		<script>
+		/* 
+		---------------
+		  try the jsfiddle version: http://jsfiddle.net/rover/5pw0bumx/
+		--------------- 
+		*/
+		// array of names
+		var students = [
+		    "Brett",
+		    "Catherine",
+		    "Craig",
+		    "Lisa",
+		    "Jonah",
+		    "Julia",
+		    "Louis",
+		    "Magdalena",
+		    "Maria",
+		    "Matt",
+		    "Melissa",
+		    "Sergio",
+		    "Will"
+		    ];
+		// get the <ul> unordered list element
+		var studentUl = document.getElementById("student_list");
+
+		// loop through the names
+		for (var i=0; i < students.length; i++){ 
+		    // create <li> list item
+		    var myLi = document.createElement("li");  
+		    // put the name text inside the <li>
+		    myLi.innerHTML = students[i];
+		    // attach to the end of <ul>
+		    studentUl.appendChild(myLi);
+		    
+		}
+		
+
+		</script>
+	</head>
+	<body>
+		<h1>Class list</h1>
+		<ul id="student_list"></ul>
+	</body>
+</html>
