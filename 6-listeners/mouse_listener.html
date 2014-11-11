@@ -23,14 +23,17 @@
 		  jsfiddle version: http://jsfiddle.net/rover/h89f5c8d/
 		--------------- 
 		*/
-		document.addEventListener('mouseup', move);
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
+			document.addEventListener('mouseup', move);
 
-		function move(event) {
-		    // console.log(event);
-		    var div = document.getElementById('b1');
-		    div.style.left = event.clientX + 'px';
-		    div.style.top = event.clientY + 'px';
-		}
+			function move(event) {
+			    // console.log(event);
+			    var div = document.getElementById('b1');
+			    div.style.left = event.clientX + 'px';
+			    div.style.top = event.clientY + 'px';
+			}
+		});
 		</script>
 	</head>
 	<body>
