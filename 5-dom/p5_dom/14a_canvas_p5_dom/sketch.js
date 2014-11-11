@@ -3,7 +3,6 @@
   jsfiddle version: http://jsfiddle.net/rover/0r7ydo1s/
 --------------- 
 */
-
 var canvas;
 var sliderElement;
 // canvas w x h
