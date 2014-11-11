@@ -23,6 +23,8 @@
 		  try the jsfiddle version: http://jsfiddle.net/rover/3jK9h/
 		--------------- 
 		*/
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
 			document.addEventListener('keyup', move);
 
 			function move(event) {
@@ -64,6 +66,7 @@
 			        }
 			    }
 			}
+		});
 		</script>
 	</head>
 	<body>

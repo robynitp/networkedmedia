@@ -9,15 +9,16 @@
 		  try the jsfiddle version: http://jsfiddle.net/rover/hakz7hw5/
 		--------------- 
 		*/
-			
-		var goButton = document.getElementById("btn");
-		goButton.addEventListener("click",buttonAction);
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
+			var goButton = document.getElementById("btn");
+			goButton.addEventListener("click",buttonAction);
 
-		function buttonAction(){
-		   var username = document.getElementById("nameInput").value;
-		   alert('Hello '+ username);
-		}
-
+			function buttonAction(){
+			   var username = document.getElementById("nameInput").value;
+			   alert('Hello '+ username);
+			}
+		});
 		</script>
 	</head>
 	<body>
