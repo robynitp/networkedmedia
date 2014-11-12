@@ -9,10 +9,12 @@ function setup() {
   loadJSON(fullUrl, getWords); 
   // set up text size
   textSize(32);
-
+  // fill style for "loading" text
+  fill(100);
+  text("Loading Capitol Words ...", 100,100);
 }
 /*
-// You could use the draw function to make the words re-render continuously
+// You could also use the draw function to make the words re-render continuously
 function draw(){
   renderWords();  
 }*/
