@@ -1,5 +1,5 @@
 var baseUrl = "http://capitolwords.org/api/1/phrases.json?entity_type=state&entity_value=NY&apikey=";
-var apiKey = "3e16c02bbb374110b558027c6adb189d";
+var apiKey = "3e16c02bbb374110b558027c6adb189d"; // this is my api key, but you can borrow it. 
 var fullUrl = baseUrl+apiKey;
 var words;
 
