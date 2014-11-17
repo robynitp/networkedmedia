@@ -35,7 +35,8 @@ function search() {
   imgs = [];
 
   // Form a URL
-  var part1 = 'https://api.instagram.com/v1/tags/';//
+  var part1 = 'https://api.instagram.com/v1/tags/';
+  // add your client ID into the ________
   var part2 = '/media/recent?client_id=_______';
   var query = part1 + input.value() + part2;
 
