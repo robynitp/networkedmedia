@@ -1,4 +1,4 @@
-/*! p5.js v0.3.10 October 21, 2014 */
+/*! p5.js v0.3.11 November 03, 2014 */
 var shim = function (require) {
     window.requestDraw = function () {
       return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (callback, element) {
@@ -2025,7 +2025,7 @@ var environment = function (require, core, constants) {
         C.WAIT
       ];
     p5.prototype._frameRate = 0;
-    p5.prototype._lastFrameTime = 0;
+    p5.prototype._lastFrameTime = new Date().getTime();
     p5.prototype._targetFrameRate = 60;
     p5.prototype.frameCount = 0;
     p5.prototype.focused = true;
@@ -2230,7 +2230,7 @@ var imageloading_displaying = function (require, core, filters, canvas, constant
         height = img.height;
       }
       var vals = canvas.modeAdjust(x, y, width, height, this._imageMode);
-      if (this._tint) {
+      if (this._tint && img.canvas) {
         this.drawingContext.drawImage(this._getTintedImageCanvas(img), vals.x, vals.y, vals.w, vals.h);
       } else {
         this.drawingContext.drawImage(frame, vals.x, vals.y, vals.w, vals.h);
@@ -3001,7 +3001,10 @@ var inputkeyboard = function (require, core) {
       this._setProperty('key', key);
       var keyPressed = this.keyPressed || window.keyPressed;
       if (typeof keyPressed === 'function' && !e.charCode) {
-        keyPressed(e);
+        var executeDefault = keyPressed(e);
+        if (executeDefault === false) {
+          e.preventDefault();
+        }
       }
     };
     p5.prototype.onkeyup = function (e) {
@@ -3015,7 +3018,10 @@ var inputkeyboard = function (require, core) {
       this._setProperty('key', key);
       this._setProperty('keyCode', e.which);
       if (typeof keyReleased === 'function') {
-        keyReleased(e);
+        var executeDefault = keyReleased(e);
+        if (executeDefault === false) {
+          e.preventDefault();
+        }
       }
     };
     p5.prototype.onkeypress = function (e) {
@@ -3023,7 +3029,10 @@ var inputkeyboard = function (require, core) {
       this._setProperty('key', String.fromCharCode(e.which));
       var keyTyped = this.keyTyped || window.keyTyped;
       if (typeof keyTyped === 'function') {
-        keyTyped(e);
+        var executeDefault = keyTyped(e);
+        if (executeDefault === false) {
+          e.preventDefault();
+        }
       }
     };
     return p5;
@@ -3044,7 +3053,7 @@ var inputmouse = function (require, core, constants) {
     p5.prototype.mouseIsPressed = false;
     p5.prototype.isMousePressed = false;
     p5.prototype._updateMouseCoords = function (e) {
-      if (e.type === 'touchstart' || e.type === 'touchmove') {
+      if (e.type === 'touchstart' || e.type === 'touchmove' || e.type === 'touchend') {
         this._setProperty('mouseX', this.touchX);
         this._setProperty('mouseY', this.touchY);
       } else {
@@ -3113,6 +3122,7 @@ var inputmouse = function (require, core, constants) {
       this._setProperty('isMousePressed', true);
       this._setProperty('mouseIsPressed', true);
       this._setMouseButton(e);
+      this._updateMouseCoords(e);
       if (typeof context.mousePressed === 'function') {
         executeDefault = context.mousePressed(e);
         if (executeDefault === false) {
@@ -3199,7 +3209,7 @@ var inputtouch = function (require, core) {
     p5.prototype.ptouchY = 0;
     p5.prototype.touches = [];
     p5.prototype._updateTouchCoords = function (e) {
-      if (e.type === 'mousedown' || e.type === 'mousemove') {
+      if (e.type === 'mousedown' || e.type === 'mousemove' || e.type === 'mouseup') {
         this._setProperty('touchX', this.mouseX);
         this._setProperty('touchY', this.mouseY);
       } else {
@@ -3254,6 +3264,7 @@ var inputtouch = function (require, core) {
       }
     };
     p5.prototype.ontouchend = function (e) {
+      this._updateTouchCoords(e);
       var context = this._isGlobal ? window : this;
       var executeDefault;
       if (typeof context.touchEnded === 'function') {
