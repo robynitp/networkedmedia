@@ -8,7 +8,7 @@ function setup() {
 
 function parseStuff(data){
     //console.log(data); // the whole thing
-    //console.log(data.weather[0].main); // the first weather condition object (eg, Rain)
+    //console.log(data.weather[0].main); // the first weather condition (eg, Rain)
 
     for (i in data.weather){
         console.log(data.weather[i].main); 
