@@ -18,7 +18,7 @@ $(document).ready(function() { //jQuery's method of listening for the DOM to loa
 
 /*
 === NOTES === 
-* Many functions in jQuery start with "$"
+* Most functions in jQuery start with "$". Yeah, it looks weird at first.
 
 * The $.get() function is similar to p5's loadJSON() function. It takes 2 paramaters:
     1. The URL to load
@@ -34,6 +34,7 @@ $(document).ready(function() { //jQuery's method of listening for the DOM to loa
 
 	Like in p5, the parameter is sent to the function automatically. 
 	You just have to name it something. Here it's called "response"
+  More info: http://api.jquery.com/jquery.get/
 
 * Access DOM elements in jQuery using $("CSS SYNTAX HERE"). 
   Inside the quotes, write the path to the element using CSS selectors like "#" and "."
