@@ -13,11 +13,7 @@ function setup() {
   fill(0);
   
   var baseUrl = "http://api.nytimes.com/svc/search/v2/articlesearch.jsonp?callback=svc_search_v2_articlesearch&q=";
-<<<<<<< HEAD
   var apiKey = "sample-key"; //this key works
-=======
-  var apiKey = "sample-key";
->>>>>>> 5f6798d5d4d4e0a3c40455d302f5bada10de05b1
   var searchTerm = "net+neutrality"; // "obama", "middle+east", "net+neutrality", "earthquake", etc  
   var url = baseUrl + searchTerm + "&api-key=" + apiKey;
   loadJSON(url, drawDocs);
