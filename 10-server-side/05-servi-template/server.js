@@ -15,9 +15,8 @@ var content = {
 	intro: "Cats on Mars explores the mysteries of space cats."
 };
 
-
 function viewHome(request){
-	request.render("templates/home.template.html",content);
+	request.render("templates/page.template.html",content);
 }
 
 // an object with content for different pages
@@ -39,7 +38,7 @@ var pages = {
 function viewPage(request){
 	var pageName = request.params.page; // 'work','play', or 'sleep'
 	if (pageName in pages){
-		request.render("templates/home.template.html",pages[pageName]);
+		request.render("templates/page.template.html",pages[pageName]);
 	} else {
 		request.respond("Page not found");
 	}
