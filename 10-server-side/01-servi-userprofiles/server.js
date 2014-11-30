@@ -22,6 +22,6 @@ route('/profile/:username',showProfile);
 function showProfile(request){
 	var content = "<h1>" + request.params.username + "</h1>";
 	content += "<p>All the user's info here</p>";
-    request.respond(content);
+	request.respond(content);
 }
 
