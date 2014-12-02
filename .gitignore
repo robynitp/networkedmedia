@@ -1,3 +1,4 @@
+.gitignore
 docs/img/week4/instagramAPI.fw.png
 2-servi/_serviScratch/*
 10-server-side/06-servi-db/people.db

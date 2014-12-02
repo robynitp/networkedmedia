@@ -24,7 +24,12 @@ Notice the flow of events and data:
        In this example, 'request.params.person' is equal to 'Jane'
 */
 function addName(request){
-	namesDB.add({name:request.params.person});
+	var personName = request.params.person; //Bob
+	var personObject = {
+		name: personName,
+		city: 'New York City'
+	}
+	namesDB.add(personObject);
 	request.respond("Added "+request.params.person);
 }
 
