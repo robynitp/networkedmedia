@@ -27,6 +27,17 @@ function fromFileDemo(request){
 		content += '<p><a href="/jsonurl">try loading JSON from url</a></p>';
 		request.respond(content);
 	});	
+
+	/* === Note: ===
+		These examples use an anonymous function as the 2nd parameter in loadJSON().
+		If you prefer, you could also use a named function, like this:
+
+		loadJSON('weather.json',gotWeather); 
+		function gotWeather(dataObj){ 
+			// do stuff
+		}
+
+	*/
 }
 
 function fromUrlDemo(request){
