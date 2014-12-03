@@ -30,7 +30,7 @@ function fromFileDemo(request){
 
 	/* === Note: ===
 		These examples use an anonymous function as the 2nd parameter in loadJSON().
-		If you prefer, you could also use a named function, like this:
+		If you prefer, you could instead use a named function, like this:
 
 		loadJSON('weather.json',gotWeather); 
 		function gotWeather(dataObj){ 
