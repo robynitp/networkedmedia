@@ -5,6 +5,7 @@ and using it as a Javascript object
 */
 var servi = require('servi');
 var app = new servi(true);
+// IMPORTANT! Make sure to add this line to require 'http':
 var http = require('http');
 port(3000);
 start();
