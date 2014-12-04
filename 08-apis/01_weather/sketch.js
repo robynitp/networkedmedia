@@ -4,7 +4,6 @@ Lauren McCarthy
 https://github.com/lmccart/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON
 
 */
-var bubbles = [];
 
 function setup() {
   createCanvas(600, 400);
