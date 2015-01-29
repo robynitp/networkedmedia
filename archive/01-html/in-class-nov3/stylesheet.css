@@ -1,0 +1,32 @@
+h1{
+	text-align: center;
+	text-family: Impact;
+	color: darkcyan;
+	font-size: 40px;
+	background-color: pink;
+}
+.box{
+	border: 1px solid #333;
+	display:block;
+	width: 100px;
+	float:left;
+	margin: 10px;
+	margin: 0 auto;
+}
+#monster{
+	width: 700px;
+	padding: 100px;
+}
+.different{
+	/*clear:both;*/
+}
+.main{
+	border:1px solid red;
+	width: 100%;
+	float:left;
+}
+#cat img{
+	width:200px;
+	position: absolute;
+	bottom: 0;
+}

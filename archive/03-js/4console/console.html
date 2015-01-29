@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Hello Console.</title>
+	<script>
+		// Open Developer Tools in your browser to see the results of console.log()
+
+		// Attention! There is also another script tag at the bottom of this file.
+		console.log("Hello console.");
+	</script>
+
+</head>
+
+<body>
+	<h1 id="intro">Introduction</h1>
+	<p id="message">Hello.</p>
+	<p>This is Ground Control 
+	to Major Tom
+	You've really made the grade
+	And the papers want to know whose shirts you wear
+	Now it's time to leave the capsule 
+	if you dare</p>
+
+	<p>This is <strong>Major Tom</strong> to Ground Control
+	I'm stepping through the door
+	And I'm floating 
+	in a most peculiar way
+	And the stars look very different today</p>
+
+	<p>For here
+	Am I sitting in a tin can
+	Far above the world
+	Planet Earth is blue
+	And there's nothing I can do</p>
+
+	<h2>References</h2>
+	<ul>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById">getElementById</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.innerHTML">innerHTML</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Javascript Date object</a></li>
+    </ul>
+
+	<script>
+		/*
+		This javascript is at the bottom of the file because it needs to be able to "see" all of the DOM elements that are loaded in the body element above. 
+		*/
+
+		// --- Get DOM elements --- //
+		// Grab the <h1> element by its id, "intro" & show the full element in the console
+		console.log(document.getElementById("intro")); 
+		
+		// show the text contained within the element
+		console.log(document.getElementById("intro").innerHTML); 
+
+		// Get the first <p> element by its id, "message" and store it in a variable 
+		var myMessage = document.getElementById("message");
+
+		// show the text currently contained within the tag
+		console.log(myMessage.innerHTML); 
+
+		// --- Do some computation --- //
+		var a = 5;
+		var b = 2;
+		var result = a + b;
+		console.log(result);
+
+		// --- Change the contents of a tag --- //
+		// put the results in the p tag
+		myMessage.innerHTML = "The sum of " + a + " and " + b + " is " + result;
+		
+		// now show the new contents of the tag
+		console.log(myMessage.innerHTML); 
+
+		// --- Ask Javascript for some info from the browser --- // 
+		// get the date and time
+		var todaysDate = new Date();
+		console.log(todaysDate);
+
+
+
+		// --- Next steps: try displaying the date on the page. --- //
+		
+		// --- See the links in the body of this document for more about the javascript methods used in this file --- //
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mouse Listener</title>
+		<style>
+			.box {
+			    border: 1px solid #333;
+			    width: 200px;
+			    height: 200px;
+			    overflow:hidden;
+			    position:absolute;
+			    left:150px;
+			    top:150px;
+			    background-color: #04A4D9;
+			}
+			p {
+			    padding: 2em;
+			}
+		</style>
+		<script>
+		/* 
+		---------------
+		  jsfiddle version: http://jsfiddle.net/rover/h89f5c8d/
+		--------------- 
+		*/
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
+			document.addEventListener('mouseup', move);
+
+			function move(event) {
+			    // console.log(event);
+			    var div = document.getElementById('b1');
+			    div.style.left = event.clientX + 'px';
+			    div.style.top = event.clientY + 'px';
+			}
+		});
+		</script>
+	</head>
+	<body>
+		<div id="b1" class="box">
+		    <p>Click the mouse to re-position the box</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Button Listener</title>
+		
+		<script>
+		/* 
+		---------------
+		  try the jsfiddle version: http://jsfiddle.net/rover/hakz7hw5/
+		--------------- 
+		*/
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
+			var goButton = document.getElementById("btn");
+			goButton.addEventListener("click",buttonAction);
+
+			function buttonAction(){
+			   var username = document.getElementById("nameInput").value;
+			   alert('Hello '+ username);
+			}
+		});
+		</script>
+	</head>
+	<body>
+		<input type="text" id="nameInput" value="Enter your name" />
+		<br/>
+		<button id="btn">Go!</button>
+	</body>
+</html>

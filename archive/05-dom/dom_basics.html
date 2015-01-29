@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Basic DOM access</title>
+	<script>
+	/* 
+	---------------
+	  try the jsfiddle version of this doc here: http://jsfiddle.net/rover/9d4t2vc7/
+	--------------- 
+	*/
+	// Wait until the DOM has loaded before running the javascript
+	// See https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
+	document.addEventListener("DOMContentLoaded", function(event) {
+    		console.log("DOM has loaded");
+    		// ## getElementById ##
+		// Grab the <h1> element by its id, "intro"
+
+		console.log(document.getElementById("intro")); // show the full <h1> element in the console
+		
+		console.log(document.getElementById("intro").innerHTML); // show the text contained within the tag
+
+		// ## querySelector and querySelectorAll ##
+
+		// Get the <p> elements, using "." to indicate that is a class, just like in CSS syntax
+
+		console.log(document.querySelector(".lyric")); // returns the first element, even if there are many
+
+		console.log(document.querySelectorAll(".lyric"));  // returns an array of elements
+
+		// // store the array of lyric elements in a variable
+		var lyrics = document.querySelectorAll(".lyric");
+
+		// get the second <p> element with class "lyric"
+		console.log(lyrics[1]);
+
+		// show the content of the tag
+		console.log(lyrics[1].innerHTML);
+
+		// Create a new element on the fly
+		var newParagraph = document.createElement("p"); 
+		// give it some content
+		newParagraph.innerHTML = "One last thing!";
+		// append it as the last element of the "song" div
+		document.getElementById("song").appendChild(newParagraph);
+ 	});
+	</script>
+
+</head>
+
+<body>
+	<h1 id="intro">Introduction</h1>
+	<div id="song">
+		<p class="lyric">This is <strong>Ground Control</strong> 
+		to Major Tom
+		You've really made the grade
+		And the papers want to know whose shirts you wear
+		Now it's time to leave the capsule 
+		if you dare</p>
+		<p class="lyric">This is <strong>Major Tom</strong> to Ground Control
+		I'm stepping through the door
+		And I'm floating 
+		in a most peculiar way
+		And the stars look very different today</p>
+		<p class="artist">David Bowie</p>
+	</div>
+</body>
+</html>

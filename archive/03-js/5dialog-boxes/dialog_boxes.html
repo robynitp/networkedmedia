@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+	<title>Dialog Boxes</title>
+	<style>
+		#colorbox{
+			width:200px;
+			height:200px;
+		}
+	</style>
+ </head>
+
+ <body>
+ 	<h1>Old School Javascript</h1>
+  <p>Pop-ups ahoy! Some quick and dirty ways to get input from the user. See <a href="http://www.tutorialspoint.com/javascript/javascript_dialog_boxes.htm">this tutorial on dialog boxes</a> for more info.</p>
+
+  <h3 id="message"></h3>
+  <div id="colorbox"><div>
+  <script>
+		var isReady = confirm("Are you ready to start?");
+		if (isReady){
+			
+			var colorChoice = prompt("Choose a color: red, green, or blue");
+			var colorCode = "#cccccc"; //default to gray
+			var resultMessage = "Here is your color"; // default message when color is found
+			if (colorChoice == "red"){
+				colorCode = "#BF0426";
+			} else if (colorChoice == "green"){
+				colorCode = "#02732A";
+			} else if (colorChoice == "blue"){
+				colorCode = "#04C4D9";
+			} else {
+				// message when color is not found
+				resultMessage = "Sorry, I don't have that color.";
+			}
+			// change the background color of the <div>
+			document.getElementById('colorbox').style.backgroundColor = colorCode;
+			// add text to the <h3> element
+			document.getElementById('message').innerHTML = resultMessage;
+			
+		} else {
+			alert("No rush. Come back when you are ready");
+		}
+	</script>
+ </body>
+</html>
