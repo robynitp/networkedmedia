@@ -6,7 +6,7 @@ var app = new servi(true);
 port(3001);  // make sure "port()" line comes before "start()"
 start();
 // set up the routes
-route('/',takeMeHome);
+route('/',showHome);
 route('/about',showAboutPage);
 route('/faq',viewFaq);
 
@@ -15,7 +15,7 @@ function showHome(request){
 	request.respond("This is the home page.");
 }
 
-function myAboutPage(request){
+function showAboutPage(request){
 	// build a string with some HTML in it
 	var myHtmlString = "<h1>About Me!!!</h1>";
 	myHtmlString += "<p>I am a person from earth.</p>";
