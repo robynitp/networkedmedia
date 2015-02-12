@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Create Elements with a Button</title>
+		<style>
+			li{
+			    border:2px solid #193441;
+			    background-color: #d1dbbd;
+			    margin:10px;
+			    padding: 1em;
+			}
+		</style>
+		<script>
+		/* 
+		---------------
+		  jsfiddle version: http://jsfiddle.net/rover/rj9s62yw/
+		--------------- 
+		*/
+		// wait for the DOM to load 
+		document.addEventListener("DOMContentLoaded", function(event) {
+			var myBtn = document.getElementById("btn");
+			myBtn.addEventListener("click",buttonAction);
+
+			// get the <ul> unordered list element
+			var nameList = document.getElementById("name_list");
+
+			function buttonAction(){
+			    // get the input element
+			    var inputBox = document.getElementById("nameInput");
+			    // get the current value in the input box
+			    var name = inputBox.value;
+			    // create <li> list item
+			    var myLi = document.createElement("li");  
+			    // put the name text inside the <li>
+			    myLi.innerHTML = name;
+			    // attach to the end of <ul>
+			    nameList.appendChild(myLi);
+			    // clear the input field
+			   inputBox.value = "";
+			}
+
+		});
+		</script>
+	</head>
+	<body>
+		<strong>Enter your name</strong> <input type="text" id="nameInput" value="" />
+		<br/>
+		<button id="btn">Add Me!</button>
+		<ul id="name_list"></ul>
+	</body>
+</html>
