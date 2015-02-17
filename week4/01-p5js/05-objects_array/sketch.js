@@ -1,3 +1,5 @@
+// from Lauren McCarthy, https://github.com/lmccart/itp-networked-media
+
 var bugs = []; // array of Jitter objects
 
 function setup() {

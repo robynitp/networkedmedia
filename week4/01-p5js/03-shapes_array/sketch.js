@@ -1,3 +1,4 @@
+// from Lauren McCarthy, https://github.com/lmccart/itp-networked-media
 // Adapted from Getting Started with Processing
 
 

@@ -1,3 +1,4 @@
+// from Lauren McCarthy, https://github.com/lmccart/itp-networked-media
 // Using a for loop to initialize values.
 // Using a for loop to draw.
 // Adapted from Getting Started with Processing.
