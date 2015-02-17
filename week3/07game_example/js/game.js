@@ -52,36 +52,36 @@ function turnCard(){
 	*/
 	//console.log(this); // uncomment to see what "this" contains
 
-	// the image is the first child of each card
+	// the image element is the first child of each card <div>
 	var currentImg = this.firstChild;
-	// re: firstChild, see: http://www.w3schools.com/jsref/prop_node_firstchild.asp
+	// for info re: firstChild, see: http://www.w3schools.com/jsref/prop_node_firstchild.asp
 
-	// if the image is not showing, show it
+	// if the image is not showing, show it (ie, turn the card over)
 	if (currentImg.style.display != "block"){
 
 		// First check that no more than two cards are turned over at once
 		// (not including already matched cards)
 		if (faceUpCards.length >= 2){
 			alert("You can't turn over more than 2 cards at once!");
-			return; //end the function here
+			return; //player goofed; end the function here
 		}
 
 		// otherwise, show the card
 		currentImg.style.display = "block";
 
 		/* ----------------
-			is it a match?
+			Check for matches
 		   ---------------- */
 
 		// Is another card turned over?
-		if (faceUpCards.length > 0){ 			
-			// 1. get the id of the other faced-up card in play
-			var cardToCompare = faceUpCards[0]; // example: "card4"
-			// 2. now get the <div> element with that id
-			var compareDiv = document.getElementById(cardToCompare);
-			// 3. now drill down to the <img> inside that div
-			var compareImg = compareDiv.firstChild;
-			// (you could do the above in fewer steps, but I'm breaking it down for clarity)
+		if (faceUpCards.length > 0){ 
+			// We know there is one card already turned over stored in the array
+			// Since there's only one, we know it's at index 0
+			// 1. get the card to compare
+			var cardToCompare = faceUpCards[0];
+			// 2. get the image inside the card
+			// the image is the first child in all the cards
+			var compareImg = cardToCompare.firstChild;
 
 			// Is it a match?
 			//    ie, is the comparison image the same as the current one?
@@ -98,20 +98,24 @@ function turnCard(){
 
 				// set opacity on both matched cards
 				this.style.opacity = "0.5";
-				compareDiv.style.opacity = "0.5";
+				cardToCompare.style.opacity = "0.5";
+
+				// remove event listeners from these cards so they can't be turned again
+				this.removeEventListener('click', turnCard);
+				cardToCompare.removeEventListener('click', turnCard);
 
 				// reset the array of face-up cards
 				faceUpCards = [];
 				return; // got a match, so exit the function here
-			} 
+			}
 		}
-		// add the id (ex: "card3") to the array of faced-up cards
-		faceUpCards.push(this.id);
+		// add the card <div> to the array of faced-up cards
+		faceUpCards.push(this);
 				
 	} else { // if this image is showing, hide it
 		currentImg.style.display = "none";
-		// remove if from the array of face up cards
-		var indexNum = faceUpCards.indexOf(this.id);
+		// remove it from the array of face up cards
+		var indexNum = faceUpCards.indexOf(this);
 		faceUpCards.splice(indexNum,1);
 		// for more about these functions, see:
 		//    http://www.w3schools.com/jsref/jsref_indexof_array.asp
