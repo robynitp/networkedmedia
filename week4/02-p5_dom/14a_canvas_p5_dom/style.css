@@ -1,0 +1,10 @@
+body{
+	padding: 0 10px; 
+	margin:0;
+}
+#canvas-container{
+	border:1px solid #333;
+}
+li{
+	background-color: #453243;
+}
