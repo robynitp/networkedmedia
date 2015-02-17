@@ -1,3 +1,9 @@
+/*
+ == Matching Game ==
+ See a live version of this game:
+ http://itp.robynoverstreet.com/game/
+
+*/
 // get the main game board div
 var board = document.getElementById("gameboard");
 
