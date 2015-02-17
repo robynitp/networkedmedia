@@ -1,0 +1,20 @@
+#gameboard{
+	width: 1150px;
+	margin: auto;
+}
+.gamecard{
+	border:1px solid #333;
+	background-color: pink;
+	width:250px;
+	height:250px;
+	margin: 10px;
+	float:left;
+}
+/* all images inside gamecard classes */
+.gamecard img{
+	display:none;
+}
+h1{
+	text-align: center;
+	
+}
