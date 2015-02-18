@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Canvas Example</title>
+    <style type="text/css" media="screen">
+        canvas{
+            border:1px solid #ccc;
+        }
+    </style>
+    
+</head>
+<body>
+    <canvas id="the_canvas" width="800" height="375"></canvas>
+    <script type="text/javascript" charset="utf-8">
+
+        var canvas = document.getElementById("the_canvas");
+        var context = canvas.getContext("2d");
+        context.fillRect(0,0,100,100); //100px square at 0,0 with default fill color of black 
+        context.fillStyle = "rgba(255,0,0,1)"; //change fill color to red
+        context.fillRect(300,200,400,100);//draw a red rectangle at 300,200 with width 400 & height 100
+        context.beginPath(); //initialize the path for the line
+        context.moveTo(200,150); //the starting point of the line
+        context.lineTo(400,350); //the ending point of the line 
+        context.stroke(); //draw the line
+    
+    </script>
+</body>
+</html>

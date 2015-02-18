@@ -1,0 +1,1 @@
+If you're curious as to what `<canvas>` looks like without p5.js, take a look at this demo. Lots of lines of code to make a few simple shapes!
