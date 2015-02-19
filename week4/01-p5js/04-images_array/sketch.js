@@ -3,6 +3,8 @@
 // Using a for loop to draw.
 // Adapted from Getting Started with Processing.
 
+// ** NOTE: You will need to run this from a server. It will not work locally.
+
 var images = [];
 var curImage = 0;
 
