@@ -1,0 +1,292 @@
+[
+  {
+    "tfidf": 0.0000295254171156426,
+    "count": 17938,
+    "ngram": "amendment"
+  },
+  {
+    "tfidf": 0.0000169367985119779,
+    "count": 3465,
+    "ngram": "brooklyn"
+  },
+  {
+    "tfidf": 0.0000116615571050133,
+    "count": 3612,
+    "ngram": "israel"
+  },
+  {
+    "tfidf": 0.0000115160453951573,
+    "count": 2356,
+    "ngram": "rollcall"
+  },
+  {
+    "tfidf": 0.0000108370691431258,
+    "count": 6584,
+    "ngram": "section"
+  },
+  {
+    "tfidf": 0.00000993234475507625,
+    "count": 2032,
+    "ngram": "subsection"
+  },
+  {
+    "tfidf": 0.00000818997092898275,
+    "count": 5120,
+    "ngram": "republican"
+  },
+  {
+    "tfidf": 0.00000794783099003641,
+    "count": 1626,
+    "ngram": "inserting"
+  },
+  {
+    "tfidf": 0.00000753222943687601,
+    "count": 2333,
+    "ngram": "nuclear"
+  },
+  {
+    "tfidf": 0.00000738696987305515,
+    "count": 4618,
+    "ngram": "shall"
+  },
+  {
+    "tfidf": 0.00000586282189011785,
+    "count": 3651,
+    "ngram": "b"
+  },
+  {
+    "tfidf": 0.00000583400711205956,
+    "count": 1807,
+    "ngram": "c"
+  },
+  {
+    "tfidf": 0.00000567859312458765,
+    "count": 3550,
+    "ngram": "deal"
+  },
+  {
+    "tfidf": 0.00000564660105064631,
+    "count": 3530,
+    "ngram": "thing"
+  },
+  {
+    "tfidf": 0.00000550792259721838,
+    "count": 1706,
+    "ngram": "consumers"
+  },
+  {
+    "tfidf": 0.00000525854116759412,
+    "count": 1615,
+    "ngram": "paragraph"
+  },
+  {
+    "tfidf": 0.00000516352073413209,
+    "count": 3228,
+    "ngram": "republicans"
+  },
+  {
+    "tfidf": 0.00000508194094558168,
+    "count": 3177,
+    "ngram": "medicare"
+  },
+  {
+    "tfidf": 0.00000484839880580991,
+    "count": 3031,
+    "ngram": "church"
+  },
+  {
+    "tfidf": 0.00000469803605828561,
+    "count": 2937,
+    "ngram": "india"
+  },
+  {
+    "tfidf": 0.00000456223942893315,
+    "count": 2778,
+    "ngram": "terms"
+  },
+  {
+    "tfidf": 0.00000445489629633144,
+    "count": 2785,
+    "ngram": "saying"
+  },
+  {
+    "tfidf": 0.0000044133066002077,
+    "count": 2759,
+    "ngram": "terrorism"
+  },
+  {
+    "tfidf": 0.00000432692800056608,
+    "count": 2705,
+    "ngram": "debt"
+  },
+  {
+    "tfidf": 0.00000409498546449138,
+    "count": 2560,
+    "ngram": "attack"
+  },
+  {
+    "tfidf": 0.0000040166048833351,
+    "count": 2511,
+    "ngram": "african"
+  },
+  {
+    "tfidf": 0.00000381345521380759,
+    "count": 2384,
+    "ngram": "democrats"
+  },
+  {
+    "tfidf": 0.00000373987344374251,
+    "count": 2338,
+    "ngram": "got"
+  },
+  {
+    "tfidf": 0.00000370690282753,
+    "count": 2197,
+    "ngram": "relations"
+  },
+  {
+    "tfidf": 0.00000370468216240704,
+    "count": 2316,
+    "ngram": "code"
+  },
+  {
+    "tfidf": 0.00000357010980732684,
+    "count": 2169,
+    "ngram": "weapons"
+  },
+  {
+    "tfidf": 0.00000356231743336808,
+    "count": 2227,
+    "ngram": "motion"
+  },
+  {
+    "tfidf": 0.00000356011150027,
+    "count": 2110,
+    "ngram": "indian"
+  },
+  {
+    "tfidf": 0.00000351432932245608,
+    "count": 2197,
+    "ngram": "terrorist"
+  },
+  {
+    "tfidf": 0.0000034455463634822,
+    "count": 2154,
+    "ngram": "drugs"
+  },
+  {
+    "tfidf": 0.00000338956023408485,
+    "count": 2119,
+    "ngram": "jewish"
+  },
+  {
+    "tfidf": 0.00000337036498972005,
+    "count": 2107,
+    "ngram": "census"
+  },
+  {
+    "tfidf": 0.00000336396657493178,
+    "count": 2103,
+    "ngram": "ought"
+  },
+  {
+    "tfidf": 0.0000032903848048667,
+    "count": 2057,
+    "ngram": "opposition"
+  },
+  {
+    "tfidf": 0.00000324628176612,
+    "count": 1924,
+    "ngram": "fully"
+  },
+  {
+    "tfidf": 0.00000323599827916643,
+    "count": 2023,
+    "ngram": "clinton"
+  },
+  {
+    "tfidf": 0.0000032030584071268,
+    "count": 1946,
+    "ngram": "campaign"
+  },
+  {
+    "tfidf": 0.00000318001214976908,
+    "count": 1988,
+    "ngram": "wage"
+  },
+  {
+    "tfidf": 0.00000317681294237495,
+    "count": 1986,
+    "ngram": "attacks"
+  },
+  {
+    "tfidf": 0.00000309523315382454,
+    "count": 1935,
+    "ngram": "2001"
+  },
+  {
+    "tfidf": 0.00000309272289968183,
+    "count": 1885,
+    "ngram": "that's"
+  },
+  {
+    "tfidf": 0.00000306911981943,
+    "count": 1819,
+    "ngram": "proposal"
+  },
+  {
+    "tfidf": 0.00000290967912496477,
+    "count": 1819,
+    "ngram": "killed"
+  },
+  {
+    "tfidf": 0.00000288637691312071,
+    "count": 1799,
+    "ngram": "voting"
+  },
+  {
+    "tfidf": 0.00000285315097012,
+    "count": 1691,
+    "ngram": "republic"
+  },
+  {
+    "tfidf": 0.00000283459114713,
+    "count": 1680,
+    "ngram": "intelligence"
+  },
+  {
+    "tfidf": 0.00000277211320701701,
+    "count": 1733,
+    "ngram": "deficit"
+  },
+  {
+    "tfidf": 0.00000276251558483461,
+    "count": 1727,
+    "ngram": "caribbean"
+  },
+  {
+    "tfidf": 0.00000274358227984237,
+    "count": 1710,
+    "ngram": "votes"
+  },
+  {
+    "tfidf": 0.00000271142141276,
+    "count": 1607,
+    "ngram": "review"
+  },
+  {
+    "tfidf": 0.00000264094570385752,
+    "count": 1651,
+    "ngram": "simple"
+  },
+  {
+    "tfidf": 0.00000263934610016046,
+    "count": 1650,
+    "ngram": "we're"
+  },
+  {
+    "tfidf": 0.00000262874583764,
+    "count": 1558,
+    "ngram": "1997"
+  }
+]
