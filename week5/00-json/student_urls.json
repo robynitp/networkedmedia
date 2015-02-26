@@ -1,76 +1,77 @@
-[
-    {
-        "name": "Ainsley O'Connell",
-        "url": "http://www.ainsleyoc.com/category/netmedia/"
-    },
+{"students": [
+        {
+            "name": "Ainsley O'Connell",
+            "url": "http://www.ainsleyoc.com/category/netmedia/"
+        },
 
-    {
-        "name": "Ashley Cortez",
-        "url": "http://www.ashleyaplomb.com/category/netmedia/"
-    },
+        {
+            "name": "Ashley Cortez",
+            "url": "http://www.ashleyaplomb.com/category/netmedia/"
+        },
 
-    {
-        "name": "Caroline Chiu",
-        "url": "http://www.crispythought.com/category/itp-2015/netmedia/"
-    },
+        {
+            "name": "Caroline Chiu",
+            "url": "http://www.crispythought.com/category/itp-2015/netmedia/"
+        },
 
-    {
-        "name": "Chrisanthy Surya",
-        "url": "http://alilsegue.net/category/networked-media/"
-    },
+        {
+            "name": "Chrisanthy Surya",
+            "url": "http://alilsegue.net/category/networked-media/"
+        },
 
-    {
-        "name": "Clare Carroll",
-        "url": "http://networkedmedia2015.tumblr.com/"
-    },
+        {
+            "name": "Clare Carroll",
+            "url": "http://networkedmedia2015.tumblr.com/"
+        },
 
-    {
-        "name": "Dinos Koumoussis",
-        "url": "http://www.constantinekoumoussis.com/networked-media/"
-    },
+        {
+            "name": "Dinos Koumoussis",
+            "url": "http://www.constantinekoumoussis.com/networked-media/"
+        },
 
-    {
-        "name": "Hochien Shih", 
-        "url": "http://hs1718.blogspot.com/"
-    },
+        {
+            "name": "Hochien Shih", 
+            "url": "http://hs1718.blogspot.com/"
+        },
 
-    {
-        "name": "Jaclyn Wickham",
-        "url": "http://www.jaclynwickham.com/?cat=12"
-    },
+        {
+            "name": "Jaclyn Wickham",
+            "url": "http://www.jaclynwickham.com/?cat=12"
+        },
 
-    {
-        "name": "Jie Ding",  
-        "url": "http://jiedingdesign.wordpress.com"
-    },
+        {
+            "name": "Jie Ding",  
+            "url": "http://jiedingdesign.wordpress.com"
+        },
 
-    {
-        "name": "Jie Dong",  
-        "url": "https://jiedong.wordpress.com/category/networked-media/"
-    },
+        {
+            "name": "Jie Dong",  
+            "url": "https://jiedong.wordpress.com/category/networked-media/"
+        },
 
-    {
-        "name": "Julian K Hyde",  
-        "url": "http://itp-thejhyde.tumblr.com/"
-    },
+        {
+            "name": "Julian K Hyde",  
+            "url": "http://itp-thejhyde.tumblr.com/"
+        },
 
-    {
-        "name": "Pierre Depaz",  
-        "url": "http://networked-pierre.tumblr.com/"
-    },
+        {
+            "name": "Pierre Depaz",  
+            "url": "http://networked-pierre.tumblr.com/"
+        },
 
-    {
-        "name": "Sisa B. Holguín",  
-        "url": "http://www.itp.sisabueno.com/category/networked-media/"
-    },
+        {
+            "name": "Sisa B. Holguín",  
+            "url": "http://www.itp.sisabueno.com/category/networked-media/"
+        },
 
-    {
-        "name": "Tanya Campbell",
-        "url": "http://www.tanyacampbell.org/category/comm-lab-networked-media"
-    },
-    
-    {
-        "name": "Yang Xu",
-        "url": "https://yangnetmedia.wordpress.com/"
-    }
-]
+        {
+            "name": "Tanya Campbell",
+            "url": "http://www.tanyacampbell.org/category/comm-lab-networked-media"
+        },
+        
+        {
+            "name": "Yang Xu",
+            "url": "https://yangnetmedia.wordpress.com/"
+        }
+    ]
+}

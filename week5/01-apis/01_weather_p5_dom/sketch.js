@@ -1,4 +1,3 @@
-// From in-class example Monday 11/17/14
 // jsfiddle version: http://jsfiddle.net/rover/bnz198Lv/
 
 function setup() {
@@ -15,5 +14,4 @@ function parseStuff(data){
         createP(data.weather[i].main);
     }
     
-    //getElement("message").html('hi'); // try adding something from the JSON here
 }
